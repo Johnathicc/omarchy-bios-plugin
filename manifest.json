@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "siob.power-actions",
+  "name": "Power Actions",
+  "version": "1.0.0",
+  "author": "Siob",
+  "description": "Theme-aware shutdown, restart, and UEFI firmware actions",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "Power Actions",
+    "description": "Shutdown, restart, or reboot into UEFI firmware settings",
+    "category": "System",
+    "allowMultiple": false
+  }
+}
