@@ -19,11 +19,8 @@ mouse and keyboard navigation and uses the active Omarchy theme.
 
 ## Installation from GitHub
 
-After this repository has been published, replace `YOUR_GITHUB_USERNAME` in
-the command below with the repository owner's GitHub username:
-
 ```bash
-omarchy plugin add https://github.com/YOUR_GITHUB_USERNAME/omarchy-power-actions.git --enable
+omarchy plugin add https://github.com/Johnathicc/omarchy-power-actions.git --enable
 ```
 
 The `--enable` option adds the widget to the bar as part of installation.
