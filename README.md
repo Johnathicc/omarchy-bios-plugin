@@ -72,6 +72,12 @@ systemctl reboot --firmware-setup
 Whether that action works depends on the computer's firmware and systemd
 support.
 
+## External dependencies
+
+The plugin does not install any external dependencies. It uses the Omarchy
+system commands included with Omarchy and `systemctl`, provided by systemd,
+for the UEFI restart action.
+
 ## Updating
 
 For a plugin installed from GitHub:
@@ -104,3 +110,7 @@ omarchy restart shell
 ## Uninstallation
 
 See [UNINSTALL.md](UNINSTALL.md) for complete removal instructions.
+
+## License
+
+Licensed under the [MIT License](LICENSE).
