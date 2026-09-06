@@ -34,7 +34,7 @@ Panel {
       title: "Restart to UEFI",
       detail: "Open firmware settings after restarting",
       prompt: "Restart into UEFI firmware settings now?",
-      confirm: "Restart to UEFI",
+      confirm: "Restart",
       command: ["systemctl", "reboot", "--firmware-setup"]
     }
   ]
