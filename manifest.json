@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "siob.power-actions",
   "name": "Power Actions",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Siob",
   "description": "Theme-aware shutdown, restart, and UEFI firmware actions",
   "kinds": [

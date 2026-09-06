@@ -82,7 +82,7 @@ Panel {
     bar: root.bar
     text: "󰐥"
     slotSize: Style.bar.iconSlot
-    tooltipText: "Power actions"
+    tooltipText: "Power Actions"
     onPressed: function(b) { if (b === Qt.LeftButton) root.toggle() }
   }
 
