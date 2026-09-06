@@ -8,8 +8,9 @@ Remove the plugin through Omarchy's plugin manager:
 omarchy plugin remove siob.power-actions --yes
 ```
 
-This removes the installed plugin and its bar configuration. Omarchy Shell
-should reload the change automatically.
+This removes the plugin from the bar and reloads Omarchy Shell automatically.
+A Git-managed installation is deleted. A manually copied installation is
+moved to a timestamped backup under `~/.config/omarchy/plugins/`.
 
 ## Manual removal
 

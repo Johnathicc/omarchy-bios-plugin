@@ -10,6 +10,8 @@ to:
 Every action asks for confirmation before it runs. The menu supports both
 mouse and keyboard navigation and uses the active Omarchy theme.
 
+![Power Actions menu](preview.png)
+
 ## Requirements
 
 - A current installation of [Omarchy](https://omarchy.org/)
@@ -20,7 +22,7 @@ mouse and keyboard navigation and uses the active Omarchy theme.
 ## Installation from GitHub
 
 ```bash
-omarchy plugin add https://github.com/Johnathicc/omarchy-power-actions.git --enable
+omarchy plugin add https://github.com/Johnathicc/omarchy-bios-plugin.git --enable
 ```
 
 The `--enable` option adds the widget to the bar as part of installation.
@@ -102,4 +104,3 @@ omarchy restart shell
 ## Uninstallation
 
 See [UNINSTALL.md](UNINSTALL.md) for complete removal instructions.
-
