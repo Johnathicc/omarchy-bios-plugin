@@ -19,7 +19,7 @@ Panel {
       detail: "Power off this computer",
       prompt: "Shut down this computer now?",
       confirm: "Shut down",
-      command: ["omarchy-system-shutdown"]
+      command: ["omarchy", "system", "shutdown"]
     },
     {
       icon: "󰜉",
@@ -27,7 +27,7 @@ Panel {
       detail: "Close applications and restart normally",
       prompt: "Restart this computer now?",
       confirm: "Restart",
-      command: ["omarchy-system-reboot"]
+      command: ["omarchy", "system", "reboot"]
     },
     {
       icon: "󰒓",

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "siob.power-actions",
   "name": "Power Actions",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Siob",
   "description": "Theme-aware shutdown, restart, and UEFI actions with keyboard confirmation",
   "kinds": [
