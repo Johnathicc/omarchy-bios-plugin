@@ -65,6 +65,24 @@ Panel {
     Quickshell.execDetached(command)
   }
 
+  function handleKeyMove(delta) {
+    if (pendingAction >= 0) {
+      confirmDialog.selectedIndex = (confirmDialog.selectedIndex + (delta > 0 ? 1 : -1) + 2) % 2
+      return
+    }
+    moveSelection(delta)
+  }
+
+  function handleKeyActivate() {
+    if (pendingAction >= 0) {
+      if (confirmDialog.selectedIndex === 0) cancelAction()
+      else runAction()
+      return
+    }
+    if (!cursorActive) cursorActive = true
+    else requestAction(selectedIndex)
+  }
+
   onOpenedChanged: {
     if (opened) {
       selectedIndex = 0
@@ -99,15 +117,11 @@ Panel {
     PanelKeyCatcher {
       id: keyCatcher
       anchors.fill: parent
-      blocked: confirmDialog.opened
       onMoveRequested: function(dx, dy) {
-        if (dy < 0 || dx < 0) root.moveSelection(-1)
-        else if (dy > 0 || dx > 0) root.moveSelection(1)
+        if (dy < 0 || dx < 0) root.handleKeyMove(-1)
+        else if (dy > 0 || dx > 0) root.handleKeyMove(1)
       }
-      onActivateRequested: {
-        if (!root.cursorActive) root.cursorActive = true
-        else root.requestAction(root.selectedIndex)
-      }
+      onActivateRequested: root.handleKeyActivate()
       onCloseRequested: {
         if (confirmDialog.opened) root.cancelAction()
         else root.close()

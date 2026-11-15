@@ -60,7 +60,7 @@ Select the power icon in the bar, then choose an action. The menu supports:
 
 - Mouse hover and click
 - Arrow keys to move between actions
-- Enter to select and confirm
+- Enter to select an action, then use the arrow keys and Enter to confirm or cancel
 - Escape to cancel or close the menu
 
 The UEFI action runs:
